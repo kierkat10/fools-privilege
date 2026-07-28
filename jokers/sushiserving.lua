@@ -19,10 +19,6 @@ SMODS.Joker{ --Sushi Serving
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
-    eternal_compat = true,
-    perishable_compat = true,
-    unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     pools = { ["foolspri_foolspri_jokers"] = true },
     loc_vars = function(self, info_queue, card)

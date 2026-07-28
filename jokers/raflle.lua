@@ -1,67 +1,39 @@
 
-SMODS.Joker{ --Raflle
-    key = "raflle",
-    config = {
-        extra = {
-            levels0 = 1,
-            levels = 1
-        }
-    },
+SMODS.Joker{ --Raffle
+    key = "raffle",
+    config = { extra = { levels = 2 } },
     loc_txt = {
-        ['name'] = 'Raflle',
+        ['name'] = 'Raffle',
         ['text'] = {
-            [1] = 'When {C:attention}Boss blind{}',
-            [2] = 'is {C:red}defeated{}, level up {C:attention} {}',
-            [3] = 'your most played',
-            [4] = '{C:attention}Poker Hand{} by {C:attention}2{}'
+            'When {C:attention}Boss Blind{} is',
+            'defeated, level up most',
+            'played {C:attention}poker hand{} by {C:attention}2'
         },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
-        }
     },
-    pos = {
-        x = 4,
-        y = 7
-    },
-    display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
-    },
+    pos = { x = 4, y = 7 },
     cost = 6,
     rarity = 1,
     blueprint_compat = true,
-    eternal_compat = true,
-    perishable_compat = true,
-    unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     pools = { ["foolspri_fpv_jokers"] = true },
-    
+    loc_vars = function(self, info_queue, card)
+        return { vars = { card.ability.extra.levels } }
+    end,
     calculate = function(self, card, context)
-        if context.end_of_round and context.main_eval and G.GAME.blind.boss  then
-            local available_hands = {}
-            for hand, value in pairs(G.GAME.hands) do
-                if value.visible and value.level >= to_big(1) then
-                    table.insert(available_hands, hand)
+        if context.end_of_round and context.main_eval and G.GAME.blind.boss then
+            local most_played = 0
+            local most_played_hand = "High Card"
+            for hand, data in pairs(G.GAME.hands) do
+                if data.played > most_played then
+                    most_played = data.played
+                    most_played_hand = hand
                 end
             end
-            local target_hand = #available_hands > 0 and pseudorandom_element(available_hands, pseudoseed('level_up_hand')) or "High Card"
-            level_up_hand(card, target_hand, true, 1)
-            local available_hands = {}
-            for hand, value in pairs(G.GAME.hands) do
-                if value.visible and value.level >= to_big(1) then
-                    table.insert(available_hands, hand)
-                end
-            end
-            local target_hand2 = #available_hands > 0 and pseudorandom_element(available_hands, pseudoseed('level_up_hand')) or "High Card"
-            level_up_hand(card, target_hand2, true, 1)
-            return {
-                message = localize('k_level_up_ex'),
-                extra = {
-                    message = localize('k_level_up_ex'),
-                    colour = G.C.RED
-                }
-            }
+            SMODS.upgrade_poker_hands({
+                hands = most_played_hand,
+                level_up = card.ability.extra.levels,
+                from = card
+            })
         end
     end
 }

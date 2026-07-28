@@ -1,6 +1,7 @@
 
 SMODS.Joker{
     key = "approve",
+    name = "Approve!",
     config = { extra = { cards = 1 } },
     pos = { x = 0, y = 9 },
     cost = 7,

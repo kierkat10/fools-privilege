@@ -19,11 +19,11 @@ end
 local files = {
     jokers = {
         list = {
-            "daringjoker",
-            "imprudentjoker",
-            "insolentjoker",
-            "arrogantjoker",
-            "cheekyjoker",
+            "cheeky",
+            "arrogant",
+            "imprudent",
+            "daring",
+            "insolent",
             "sushiserving",
             "dalgonacookie",
             "basiccola",

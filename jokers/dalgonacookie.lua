@@ -42,7 +42,7 @@ SMODS.Joker{ --Dalgona Cookie
     
     loc_vars = function(self, info_queue, card)
         
-        return {vars = {(G.GAME.current_round.hands_left or 0), (G.GAME.chips or 0), (G.GAME.blind.chips or 0)}}
+        return {vars = {(G.GAME.current_round.hands_left or 0), (G.GAME.chips or 0), (G.GAME and G.GAME.blind and G.GAME.blind.chips or 0)}}
     end,
     
     calculate = function(self, card, context)

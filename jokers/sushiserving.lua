@@ -3,28 +3,19 @@ SMODS.Joker{ --Sushi Serving
     key = "sushiserving",
     config = {
         extra = {
-            xchips_sushiserving = 2.5
+            xchips = 2.5,
+            xchips_mod = 0.25
         }
     },
     loc_txt = {
         ['name'] = 'Sushi Serving',
         ['text'] = {
-            [1] = '{X:chips,C:white}X2.5{} Chips, loses {X:chips,C:white}X0.25{} Chips',
-            [2] = 'at end of round.',
-            [3] = '(Currently {X:chips,C:white}X#1#{})'
-        },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
+            '{C:white,X:chips}X#1#{} Chips,',
+            'loses {X:chips,C:white}X#2#{} Chips at',
+            'end of round'
         }
     },
-    pos = {
-        x = 5,
-        y = 0
-    },
-    display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
-    },
+    pos = { x = 5, y = 0 },
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -34,25 +25,31 @@ SMODS.Joker{ --Sushi Serving
     discovered = true,
     atlas = 'CustomJokers',
     pools = { ["foolspri_foolspri_jokers"] = true },
-    
     loc_vars = function(self, info_queue, card)
-        
-        return {vars = {card.ability.extra.xchips_sushiserving}}
+        return {
+            vars = {
+                card.ability.extra.xchips,
+                card.ability.extra.xchips_mod
+            }
+        }
     end,
-    
     calculate = function(self, card, context)
-        if context.end_of_round and context.game_over == false and context.main_eval  then
+        if context.joker_main then
             return {
-                func = function()
-                    card.ability.extra.xchips_sushiserving = math.max(0, (card.ability.extra.xchips_sushiserving) - 0.25)
-                    return true
-                end
+                xchips = card.ability.extra.xchips
             }
         end
-        if context.cardarea == G.jokers and context.joker_main  then
-            return {
-                x_chips = card.ability.extra.xchips_sushiserving
-            }
+        if context.end_of_round and context.main_eval and not context.blueprint then
+            SMODS.scale_card(card, {
+                ref_table = card.ability.extra,
+                ref_value = "xchips",
+                scalar_value = "xchips_mod",
+                operation = "-",
+                scaling_message = {
+                    message = "-X" .. card.ability.extra.xchips_mod .. " Chip" .. (card.ability.extra.xchips_mod == 1 and "" or "s"),
+                    colour = G.C.CHIPS
+                }
+            })
         end
     end
 }

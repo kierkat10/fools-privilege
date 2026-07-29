@@ -52,6 +52,14 @@ return {
                     "{C:red,E:2}self destructs"
                 }
             },
+            j_fpr_basic_cola = {
+                name = "Basic Cola",
+                text = {
+                    "Sell this card",
+                    "to redeem a",
+                    "random {C:attention}Voucher"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

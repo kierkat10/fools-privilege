@@ -85,6 +85,15 @@ return {
                     "{C:inactive}(Must have room)"
                 }
             },
+            j_fpr_blue_moon = {
+                name = "Blue Moon",
+                text = {
+                    "When a non-{C:dark_edition}Negative",
+                    "{C:planet}Planet{} card is used,",
+                    "create a random",
+                    "{C:dark_edition}Negative{} {C:planet}Planet{} card"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

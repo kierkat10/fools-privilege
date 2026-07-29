@@ -1,71 +1,42 @@
 
-SMODS.Joker { --Blue Moon
-    key = "bluemoon",
-    config = {
-        extra = {
-        }
-    },
-    loc_txt = {
-        ['name'] = 'Blue Moon',
-        ['text'] = {
-            [1] = 'When a non Negative',
-            [2] = '{C:planet}Planet{} card is used,',
-            [3] = 'create a random',
-            [4] = 'Negative {C:planet}Planet{} card'
-        },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
-        }
-    },
-    pos = {
-        x = 1,
-        y = 1
-    },
-    display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
-    },
-    cost = 6,
+SMODS.Joker {
+    key = "blue_moon",
+    name = "Blue Moon",
+    pos = { x = 1, y = 1 },
+    cost = 8,
     rarity = 3,
     blueprint_compat = true,
-    eternal_compat = true,
-    perishable_compat = true,
-    unlocked = true,
-    discovered = true,
-    atlas = 'joker',
-    pools = { ["fpr_fpr_jokers"] = true },
-    
+    atlas = "joker",
+    loc_vars = function(self, info_queue, card)
+        info_queue[#info_queue + 1] = { key = "e_negative_consumable", set = "Edition", config = { extra = 1 } }
+    end,
     calculate = function(self, card, context)
-        if context.using_consumeable  then
-            if context.consumeable and context.consumeable.ability.set == 'Planet' then
-                return {
-                    func = function()
-                        
-                        for i = 1, 1 do
-                            G.E_MANAGER:add_event(Event({
-                                trigger = 'after',
-                                delay = 0.4,
-                                func = function()
-                                    if G.consumeables.config.card_limit > #G.consumeables.cards + G.GAME.consumeable_buffer then
-                                        G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
-                                    end
-                                    
-                                    play_sound('timpani')
-                                    SMODS.add_card({ set = 'Planet', edition = 'e_negative', })                            
-                                    card:juice_up(0.3, 0.5)
-                                    return true
-                                end
-                            }))
-                        end
-                        delay(0.6)
-                        
-                        if created_consumable then
-                            card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_planet'), colour = G.C.SECONDARY_SET.Planet})
-                        end
-                        return true
-                    end
-                }
-            end
+        if
+            context.using_consumeable and
+            context.consumeable and
+            not (context.consumeable.edition and context.consumeable.edition.negative) and
+            context.consumeable.ability.set == "Planet" and
+            #G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit
+        then
+            G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
+            G.E_MANAGER:add_event(Event({
+                trigger = "after",
+                delay = 0.4,
+                func = function()
+                    play_sound("timpani")
+                    SMODS.add_card({
+                        set = "Planet",
+                        edition = "e_negative",
+                        key_append = "bof_blue_moon"
+                    })
+                    G.GAME.consumeable_buffer = 0
+                    return true
+                end
+            }))
+            return {
+                message = localize("k_plus_planet"),
+                colour = G.C.SET.Planet
+            }
         end
     end
 }

@@ -60,6 +60,14 @@ return {
                     "random {C:attention}Voucher"
                 }
             },
+            j_fpr_sugar_free_cola = {
+                name = "Sugar-Free Cola",
+                text = {
+                    "Sell this card",
+                    "to redeem {C:attention}#1#",
+                    "random free {C:attention}Tags"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

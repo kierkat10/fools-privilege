@@ -27,7 +27,7 @@ local files = {
             "sushi_serving",
             "dalgona",
             "basic_cola",
-            "sugarfreecola",
+            "sugar_free_cola",
             "grapecola",
             "bluecola",
             "bluemoon",

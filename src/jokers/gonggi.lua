@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Gonggi
+SMODS.Joker { --Gonggi
     key = "gonggi",
     config = {
         extra = {

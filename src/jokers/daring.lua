@@ -1,5 +1,5 @@
 
-SMODS.Joker{
+SMODS.Joker {
     key = "daring",
     name = "Daring Joker",
     config = { extra = { dollars = 3 } },

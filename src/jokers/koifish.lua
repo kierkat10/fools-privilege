@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Koi Fish
+SMODS.Joker { --Koi Fish
     key = "koifish",
     config = {
         extra = {

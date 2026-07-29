@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Diogenes
+SMODS.Joker { --Diogenes
     key = "diogenes",
     config = {
         extra = {

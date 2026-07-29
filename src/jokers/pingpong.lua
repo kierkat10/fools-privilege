@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Ping Pong
+SMODS.Joker { --Ping Pong
     key = "pingpong",
     config = {
         extra = {

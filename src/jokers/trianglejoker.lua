@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Triangle Joker
+SMODS.Joker { --Triangle Joker
     key = "trianglejoker",
     config = {
         extra = {

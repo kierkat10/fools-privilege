@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Mult Matt
+SMODS.Joker { --Mult Matt
     key = "multmatt",
     config = {
         extra = {

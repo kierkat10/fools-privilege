@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Smash Burguer
+SMODS.Joker { --Smash Burguer
     key = "smashburguer",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Bungee Jumping
+SMODS.Joker { --Bungee Jumping
     key = "bungeejumping",
     config = {
         extra = {

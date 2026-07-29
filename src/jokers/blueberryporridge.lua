@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Blueberry Porridge
+SMODS.Joker { --Blueberry Porridge
     key = "blueberryporridge",
     config = {
         extra = {

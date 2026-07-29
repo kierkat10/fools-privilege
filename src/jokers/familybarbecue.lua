@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Family Barbecue
+SMODS.Joker { --Family Barbecue
     key = "familybarbecue",
     config = {
         extra = {

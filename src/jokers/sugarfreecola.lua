@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Sugar free Cola
+SMODS.Joker { --Sugar free Cola
     key = "sugarfreecola",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Roulette
+SMODS.Joker { --Roulette
     key = "roulette",
     config = {
         extra = {

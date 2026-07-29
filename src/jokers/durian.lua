@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Durian
+SMODS.Joker { --Durian
     key = "durian",
     config = {
         extra = {

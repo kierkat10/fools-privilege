@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Creeper
+SMODS.Joker { --Creeper
     key = "creeper",
     config = {
         extra = {

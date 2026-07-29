@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Draft
+SMODS.Joker { --Draft
     key = "draft",
     config = {
         extra = {

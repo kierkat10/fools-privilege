@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Economist
+SMODS.Joker { --Economist
     key = "economist",
     config = {
         extra = {

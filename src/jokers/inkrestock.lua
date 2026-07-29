@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Ink Restock
+SMODS.Joker { --Ink Restock
     key = "inkrestock",
     config = {
         extra = {

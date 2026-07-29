@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Hattrick
+SMODS.Joker { --Hattrick
     key = "hattrick",
     config = {
         extra = {

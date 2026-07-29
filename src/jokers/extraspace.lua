@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Extra Space
+SMODS.Joker { --Extra Space
     key = "extraspace",
     config = {
         extra = {

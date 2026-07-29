@@ -36,6 +36,22 @@ return {
                     "contains a {C:attention}Flush"
                 }
             },
+            j_fpr_sushi_serving = {
+                name = "Sushi Serving",
+                text = {
+                    "{C:white,X:chips}X#1#{} Chips,",
+                    "loses {X:chips,C:white}X#2#{} Chips at",
+                    "end of round"
+                }
+            },
+            j_fpr_dalgona = {
+                name = "Dalgona Cookie",
+                text = {
+                    "{C:blue}+#1#{} hand#<s>1# and {C:red}+#2#{} discard#<s>2# if",
+                    "{C:attention}Blind{} is not won by {C:attention}final{} hand,",
+                    "{C:red,E:2}self destructs"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

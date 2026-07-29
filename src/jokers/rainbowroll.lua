@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Rainbow Roll
+SMODS.Joker { --Rainbow Roll
     key = "rainbowroll",
     config = {
         extra = {

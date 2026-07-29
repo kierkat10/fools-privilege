@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Jack of All Trades
+SMODS.Joker { --Jack of All Trades
     key = "jackofalltrades",
     config = {
         extra = {

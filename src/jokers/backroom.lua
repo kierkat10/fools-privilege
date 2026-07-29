@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Backroom
+SMODS.Joker {
     key = "backroom",
     config = {
         extra = {

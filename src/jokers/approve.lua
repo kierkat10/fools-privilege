@@ -1,5 +1,5 @@
 
-SMODS.Joker{
+SMODS.Joker {
     key = "approve",
     name = "Approve!",
     config = { extra = { cards = 1 } },

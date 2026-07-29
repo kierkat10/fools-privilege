@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Knitted Jeans
+SMODS.Joker { --Knitted Jeans
     key = "knittedjeans",
     config = {
         extra = {

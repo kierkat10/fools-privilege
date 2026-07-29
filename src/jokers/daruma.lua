@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Daruma
+SMODS.Joker { --Daruma
     key = "daruma",
     config = {
         extra = {

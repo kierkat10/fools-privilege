@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Server Book
+SMODS.Joker { --Server Book
     key = "serverbook",
     config = {
         extra = {

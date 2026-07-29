@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Dr. Spectred
+SMODS.Joker { --Dr. Spectred
     key = "drspectred",
     config = {
         extra = {

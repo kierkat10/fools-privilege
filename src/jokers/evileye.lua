@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Evil Eye 
+SMODS.Joker { --Evil Eye 
     key = "evileye",
     config = {
         extra = {

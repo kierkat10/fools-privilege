@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --One Wish Willow
+SMODS.Joker { --One Wish Willow
     key = "onewishwillow",
     config = {
         extra = {

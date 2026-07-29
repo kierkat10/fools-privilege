@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Medusa
+SMODS.Joker { --Medusa
     key = "medusa",
     config = {
         extra = {

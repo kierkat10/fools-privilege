@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Entry Card
+SMODS.Joker { --Entry Card
     key = "entrycard",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Rainbow End
+SMODS.Joker { --Rainbow End
 key = "rainbowend",
 config = {
     extra = {

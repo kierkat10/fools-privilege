@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Grape Cola
+SMODS.Joker { --Grape Cola
     key = "grapecola",
     config = {
         extra = {

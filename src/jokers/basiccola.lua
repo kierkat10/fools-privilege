@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Basic Cola
+SMODS.Joker { --Basic Cola
     key = "basiccola",
     config = {
         extra = {

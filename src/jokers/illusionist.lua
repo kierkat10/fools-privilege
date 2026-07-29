@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Illusionist
+SMODS.Joker { --Illusionist
     key = "illusionist",
     config = {
         extra = {

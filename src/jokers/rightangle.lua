@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Right Angle
+SMODS.Joker { --Right Angle
     key = "rightangle",
     config = {
         extra = {

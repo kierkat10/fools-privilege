@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Down the flush
+SMODS.Joker { --Down the flush
     key = "downtheflush",
     config = {
         extra = {

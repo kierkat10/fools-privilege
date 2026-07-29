@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Homecoming
+SMODS.Joker { --Homecoming
     key = "homecoming",
     config = {
         extra = {

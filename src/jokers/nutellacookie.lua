@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Nutella Cookie
+SMODS.Joker { --Nutella Cookie
     key = "nutellacookie",
     config = {
         extra = {

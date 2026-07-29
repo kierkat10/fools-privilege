@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --TV
+SMODS.Joker { --TV
     key = "tv",
     config = {
         extra = {

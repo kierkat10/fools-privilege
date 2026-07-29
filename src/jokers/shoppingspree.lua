@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Shopping Spree
+SMODS.Joker { --Shopping Spree
     key = "shoppingspree",
     config = {
         extra = {

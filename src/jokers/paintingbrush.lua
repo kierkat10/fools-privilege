@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Painting Brush
+SMODS.Joker { --Painting Brush
     key = "paintingbrush",
     config = {
         extra = {

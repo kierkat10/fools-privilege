@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Wu Zetian
+SMODS.Joker { --Wu Zetian
     key = "wuzetian",
     config = {
         extra = {

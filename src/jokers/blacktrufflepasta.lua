@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Black Truffle Pasta
+SMODS.Joker { --Black Truffle Pasta
     key = "blacktrufflepasta",
     config = {
         extra = {

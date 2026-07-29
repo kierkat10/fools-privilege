@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Croupier
+SMODS.Joker { --Croupier
     key = "croupier",
     config = {
         extra = {

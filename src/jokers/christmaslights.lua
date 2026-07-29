@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Christmas Lights
+SMODS.Joker { --Christmas Lights
     key = "christmaslights",
     config = {
         extra = {

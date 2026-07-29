@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Solar System
+SMODS.Joker { --Solar System
     key = "solarsystem",
     config = {
         extra = {

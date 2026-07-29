@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Schrödinger
+SMODS.Joker { --Schrödinger
     key = "schrodinger",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Stardust Joker
+SMODS.Joker { --Stardust Joker
     key = "stardustjoker",
     config = {
         extra = {

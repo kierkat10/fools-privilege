@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Bonus Prize
+SMODS.Joker { --Bonus Prize
     key = "bonusprize",
     config = {
         extra = {

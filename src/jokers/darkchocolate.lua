@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Dark Chocolate
+SMODS.Joker { --Dark Chocolate
     key = "darkchocolate",
     config = {
         extra = {

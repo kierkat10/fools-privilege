@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Red Paint
+SMODS.Joker { --Red Paint
     key = "redpaint",
     config = {
         extra = {

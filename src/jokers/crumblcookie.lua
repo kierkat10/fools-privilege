@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Crumbl Cookie
+SMODS.Joker { --Crumbl Cookie
     key = "crumblcookie",
     config = {
         extra = {

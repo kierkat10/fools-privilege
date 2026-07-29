@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Oath Of Loyalty
+SMODS.Joker { --Oath Of Loyalty
     key = "oathofloyalty",
     config = {
         extra = {

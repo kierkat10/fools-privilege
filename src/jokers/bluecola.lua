@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Blue Cola
+SMODS.Joker { --Blue Cola
     key = "bluecola",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Break Shot
+SMODS.Joker { --Break Shot
     key = "breakshot",
     config = {
         extra = {

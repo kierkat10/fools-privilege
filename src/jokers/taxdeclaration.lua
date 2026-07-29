@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Tax Declaration
+SMODS.Joker { --Tax Declaration
     key = "taxdeclaration",
     config = {
         extra = {

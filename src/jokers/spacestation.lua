@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Space Station
+SMODS.Joker { --Space Station
     key = "spacestation",
     config = {
         extra = {

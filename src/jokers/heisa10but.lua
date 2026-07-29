@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --He is a 10 but...
+SMODS.Joker { --He is a 10 but...
     key = "heisa10but",
     config = {
         extra = {

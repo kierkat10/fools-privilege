@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Scraping tool
+SMODS.Joker { --Scraping tool
     key = "scrapingtool",
     config = {
         extra = {

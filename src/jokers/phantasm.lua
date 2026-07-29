@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Phantasm
+SMODS.Joker { --Phantasm
     key = "phantasm",
     config = {
         extra = {

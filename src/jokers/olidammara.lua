@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Olidammara
+SMODS.Joker { --Olidammara
     key = "olidammara",
     config = {
         extra = {

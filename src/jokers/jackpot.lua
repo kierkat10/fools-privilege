@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Jackpot
+SMODS.Joker { --Jackpot
     key = "jackpot",
     config = {
         extra = {

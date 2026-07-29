@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Burning Pact 
+SMODS.Joker { --Burning Pact 
     key = "burningpact",
     config = {
         extra = {

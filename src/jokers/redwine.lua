@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Red Wine
+SMODS.Joker { --Red Wine
     key = "redwine",
     config = {
         extra = {

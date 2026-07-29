@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Blue Flame
+SMODS.Joker { --Blue Flame
     key = "blueflame",
     config = {
         extra = {

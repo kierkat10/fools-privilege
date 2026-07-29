@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Spin the Wheel
+SMODS.Joker { --Spin the Wheel
     key = "spinthewheel",
     config = {
         extra = {

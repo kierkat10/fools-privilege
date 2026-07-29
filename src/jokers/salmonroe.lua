@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Salmon Roe
+SMODS.Joker { --Salmon Roe
     key = "salmonroe",
     config = {
         extra = {

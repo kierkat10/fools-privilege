@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Red Velvet Cake
+SMODS.Joker { --Red Velvet Cake
     key = "redvelvetcake",
     config = {
         extra = {

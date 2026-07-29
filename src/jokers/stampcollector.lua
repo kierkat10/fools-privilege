@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Stamp Collector
+SMODS.Joker { --Stamp Collector
     key = "stampcollector",
     config = {
         extra = {

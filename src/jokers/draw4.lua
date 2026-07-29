@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Draw 4
+SMODS.Joker { --Draw 4
     key = "draw4",
     config = {
         extra = {

@@ -1,26 +1,17 @@
 
-SMODS.Joker{ --Sushi Serving
-    key = "sushiserving",
+SMODS.Joker {
+    key = "sushi_serving",
     config = {
         extra = {
             xchips = 2.5,
             xchips_mod = 0.25
         }
     },
-    loc_txt = {
-        ['name'] = 'Sushi Serving',
-        ['text'] = {
-            '{C:white,X:chips}X#1#{} Chips,',
-            'loses {X:chips,C:white}X#2#{} Chips at',
-            'end of round'
-        }
-    },
     pos = { x = 5, y = 0 },
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
-    atlas = 'joker',
-    pools = { ["fpr_fpr_jokers"] = true },
+    atlas = "joker",
     loc_vars = function(self, info_queue, card)
         return {
             vars = {

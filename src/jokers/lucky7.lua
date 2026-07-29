@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Lucky 7
+SMODS.Joker { --Lucky 7
     key = "lucky7",
     config = {
         extra = {

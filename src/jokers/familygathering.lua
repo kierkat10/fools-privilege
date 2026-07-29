@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Family Gathering
+SMODS.Joker { --Family Gathering
     key = "familygathering",
     config = {
         extra = {

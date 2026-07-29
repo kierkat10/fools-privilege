@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --L
+SMODS.Joker { --L
     key = "l",
     config = {
         extra = {

@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Sakura Tree
+SMODS.Joker { --Sakura Tree
     key = "sakuratree",
     config = {
         extra = {

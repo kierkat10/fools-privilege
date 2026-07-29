@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Regular Joker
+SMODS.Joker { --Regular Joker
     key = "regular",
     config = { extra = { chips = 40 } },
     loc_txt = {

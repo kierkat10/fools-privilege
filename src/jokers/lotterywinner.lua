@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Lottery Winner
+SMODS.Joker { --Lottery Winner
     key = "lotterywinner",
     config = {
         extra = {

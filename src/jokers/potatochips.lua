@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Potato Chips
+SMODS.Joker { --Potato Chips
     key = "potatochips",
     config = {
         extra = {

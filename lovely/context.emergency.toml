@@ -1,0 +1,39 @@
+[manifest]
+version = "1.0.0"
+priority = -1
+dump_lua = true
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+if G.GAME.chips - G.GAME.blind.chips >= 0 or G.GAME.current_round.hands_left < 1 then
+    G.STATE = G.STATES.NEW_ROUND
+else
+    G.STATE = G.STATES.DRAW_TO_HAND
+end
+'''
+position = "at"
+payload = '''
+-- patched by fool's privilege (with bof compat)
+if G.GAME.chips - G.GAME.blind.chips >= 0 then
+    G.STATE = G.STATES.NEW_ROUND
+elseif G.GAME.current_round.hands_left < 1 then
+    local dalgona_save = next(SMODS.find_card("j_fpr_dalgona"))
+    local super_save = next(SMODS.find_card("j_bof_super")) and bof_check_super_jokers()
+    if dalgona_save then
+        SMODS.calculate_context({ fpr_emergency = true })
+    end
+    if super_save then
+        SMODS.calculate_context({ bof_emergency = true })
+    end
+    if dalgona_save or super_save then
+        G.STATE = G.STATES.DRAW_TO_HAND
+    else
+        G.STATE = G.STATES.NEW_ROUND
+    end
+else
+    G.STATE = G.STATES.DRAW_TO_HAND
+end
+'''
+match_indent = true

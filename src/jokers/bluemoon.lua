@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Blue Moon
+SMODS.Joker { --Blue Moon
     key = "bluemoon",
     config = {
         extra = {

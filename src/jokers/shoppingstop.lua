@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Shopping Stop
+SMODS.Joker { --Shopping Stop
     key = "shoppingstop",
     config = {
         extra = {

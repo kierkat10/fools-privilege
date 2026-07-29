@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Blank Mirror
+SMODS.Joker { --Blank Mirror
     key = "blankmirror",
     config = {
         extra = {

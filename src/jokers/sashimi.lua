@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Sashimi
+SMODS.Joker { --Sashimi
     key = "sashimi",
     config = {
         extra = {

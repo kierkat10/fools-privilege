@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Coffee Shot
+SMODS.Joker { --Coffee Shot
     key = "coffeeshot",
     config = {
         extra = {

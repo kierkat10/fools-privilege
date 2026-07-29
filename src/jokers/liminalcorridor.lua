@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Liminal Corridor
+SMODS.Joker { --Liminal Corridor
     key = "liminalcorridor",
     config = {
         extra = {

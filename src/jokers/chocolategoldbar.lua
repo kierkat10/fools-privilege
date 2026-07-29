@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Chocolate Gold Bar
+SMODS.Joker { --Chocolate Gold Bar
     key = "chocolategoldbar",
     config = {
         extra = {

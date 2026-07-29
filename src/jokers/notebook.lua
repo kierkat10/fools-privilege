@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Notebook
+SMODS.Joker { --Notebook
     key = "notebook",
     config = {
         extra = {

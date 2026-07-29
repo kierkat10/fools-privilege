@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Raffle
+SMODS.Joker { --Raffle
     key = "raffle",
     config = { extra = { levels = 2 } },
     loc_txt = {

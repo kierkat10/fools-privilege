@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --College Degree
+SMODS.Joker { --College Degree
     key = "collegedegree",
     config = {
         extra = {

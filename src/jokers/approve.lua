@@ -1,4 +1,3 @@
-
 SMODS.Joker {
     key = "approve",
     name = "Approve!",
@@ -13,7 +12,7 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         if context.after and G.GAME.current_round.hands_played == 0 and #context.scoring_hand == card.ability.extra.cards then
-            for _, scored_card in ipairs(G.play.cards) do
+            for _, scored_card in ipairs(context.full_hand) do
                 scored_card:set_seal(SMODS.poll_seal({
                     guaranteed = true,
                     type_key = "fpr_approve"

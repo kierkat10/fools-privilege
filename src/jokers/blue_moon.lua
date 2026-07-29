@@ -1,4 +1,3 @@
-
 SMODS.Joker {
     key = "blue_moon",
     name = "Blue Moon",

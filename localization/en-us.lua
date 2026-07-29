@@ -94,6 +94,14 @@ return {
                     "{C:dark_edition}Negative{} {C:planet}Planet{} card"
                 }
             },
+            j_fpr_rainbow_end = {
+                name = "Rainbow End",
+                text = {
+                    "{C:green}#1# in #2#{} chance to",
+                    "apply {C:dark_edition}Polychrome{} to",
+                    "all scoring cards"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

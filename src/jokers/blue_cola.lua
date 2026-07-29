@@ -1,4 +1,3 @@
-
 SMODS.Joker {
     key = "blue_cola",
     config = { extra = { cards = 2 } },

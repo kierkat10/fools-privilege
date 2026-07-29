@@ -64,8 +64,25 @@ return {
                 name = "Sugar-Free Cola",
                 text = {
                     "Sell this card",
-                    "to redeem {C:attention}#1#",
+                    "to create {C:attention}#1#",
                     "random free {C:attention}Tags"
+                }
+            },
+            j_fpr_grape_cola = {
+                name = "Grape Cola",
+                text = {
+                    "Sell this card to",
+                    "create a free",
+                    "{C:attention}Negative Tag"
+                }
+            },
+            j_fpr_blue_cola = {
+                name = "Blue Cola",
+                text = {
+                    "Sell this card to",
+                    "create {C:attention}#1#{} random",
+                    "{C:spectral}Spectral{} cards",
+                    "{C:inactive}(Must have room)"
                 }
             },
             j_fpr_approve = {

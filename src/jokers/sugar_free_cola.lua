@@ -1,22 +1,8 @@
 
-SMODS.Joker { --Sugar free Cola
+SMODS.Joker {
     key = "sugar_free_cola",
     name = "Sugar-Free Cola",
-    config = {
-        extra = {
-            tags = 3
-        }
-    },
-    loc_txt = {
-        ['name'] = 'Sugar free Cola',
-        ['text'] = {
-            [1] = 'When {C:green}sold {}create',
-            [2] = '3 random {C:attention}Tags{}'
-        },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
-        }
-    },
+    config = { extra = { tags = 3 } },
     pos = { x = 8, y = 0 },
     cost = 6,
     rarity = 2,
@@ -44,7 +30,6 @@ SMODS.Joker { --Sugar free Cola
                 add_tag(tag)
                 play_sound("generic1", 0.9 + math.random() * 0.1, 0.8)
                 play_sound("holo1", 1.2 + math.random() * 0.1, 0.4)
-                return true
             end
         end
     end

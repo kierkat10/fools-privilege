@@ -18,7 +18,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.before and SMODS.pseudorandom_probability(card, "j_fpr_rainbowend", 1, card.ability.extra.odds) then
+        if context.before and SMODS.pseudorandom_probability(card, "fpr_rainbowend", 1, card.ability.extra.odds) then
             for _, scored_card in ipairs(context.scoring_hand) do
                 scored_card:set_edition("e_polychrome")
             end

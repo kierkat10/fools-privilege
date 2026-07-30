@@ -1,19 +1,16 @@
 
-SMODS.Joker { --Regular Joker
+SMODS.Joker {
     key = "regular",
+    name = "Regular Joker",
     config = { extra = { chips = 40 } },
-    loc_txt = {
-        ['name'] = 'Regular',
-        ['text'] = {
-            '{C:blue}+#1#{} Chips'
-        }
-    },
     pos = { x = 9, y = 1 },
-    cost = 4,
+    cost = 2,
     rarity = 1,
     blueprint_compat = true,
-    atlas = 'joker',
-    pools = { ["fpr_fpv_jokers"] = true },
+    atlas = "joker",
+    loc_vars = function(self, info_queue, card)
+        return { vars = { card.ability.extra.chips } }
+    end,
     calculate = function(self, card, context)
         if context.joker_main then
             return {

@@ -144,6 +144,22 @@ return {
                     "{C:blue}-#2#{} hand#<s>2# each round"
                 }
             },
+            j_fpr_rightangle = {
+                name = "Right Angle",
+                text = {
+                    "This Joker gains {C:blue}+#1#{} Chip#<s>1#",
+                    "if played hand contains",
+                    "a {C:attention}Three of a Kind{}, but",
+                    "loses {C:blue}-#2#{} Chip#<s>2# otherwise",
+                    "{C:inactive}(Currently {C:blue}+#3#{C:inactive} Chips)"
+                }
+            },
+            j_fpr_regular = {
+                name = "Regular Joker",
+                text = {
+                    "{C:chips}+#1#{} Chips"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

@@ -1,4 +1,3 @@
-
 SMODS.Joker {
     key = "draw",
     name = "Draw 4",

@@ -110,6 +110,16 @@ return {
                     "give {C:white,X:mult}X#3#{} Mult when scored",
                 }
             },
+            j_fpr_mirror = {
+                name = "Blank Mirror",
+                text = {
+                    "Create either {C:attention}Vampire{} or",
+                    "{C:attention}Invisible Joker{} at random",
+                    "if played hand contains",
+                    "a scoring {C:attention}Glass Card{},",
+                    "{C:red,E:2}self destructs"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

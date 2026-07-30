@@ -33,7 +33,7 @@ local files = {
             "blue_moon",
             "rainbow_end",
             "schrodinger",
-            "blankmirror",
+            "mirror",
             "spinthewheel",
             "croupier",
             "draw4",

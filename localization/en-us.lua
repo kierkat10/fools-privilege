@@ -129,6 +129,13 @@ return {
                     "but lose {C:money}$#1#"
                 }
             },
+            j_fpr_croupier = {
+                name = "Croupier",
+                text = {
+                    "Swap {C:blue}Chips{}",
+                    "and {C:red}Mult"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

@@ -36,7 +36,7 @@ local files = {
             "mirror",
             "spin_wheel",
             "croupier",
-            "draw4",
+            "draw",
             "rightangle",
             "regularjoker",
             "stardustjoker",

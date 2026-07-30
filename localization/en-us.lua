@@ -136,6 +136,14 @@ return {
                     "and {C:red}Mult"
                 }
             },
+            j_fpr_draw = {
+                name = "Draw 4",
+                text = {
+                    "Draw {C:attention}#1#{} additional card#<s>1#",
+                    "when {C:attention}Blind{} is selected,",
+                    "{C:blue}-#2#{} hand#<s>2# each round"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

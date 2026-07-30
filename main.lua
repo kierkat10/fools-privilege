@@ -39,7 +39,7 @@ local files = {
             "draw",
             "right_angle",
             "regular",
-            "stardustjoker",
+            "stardust",
             "smashburguer",
             "tomatosoup",
             "crumblcookie",

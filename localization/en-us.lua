@@ -160,6 +160,15 @@ return {
                     "{C:chips}+#1#{} Chips"
                 }
             },
+            j_fpr_stardust = {
+                name = "Stardust Joker",
+                text = {
+                    "This Joker gains {C:white,X:mult}X#1#{} Mult",
+                    "per card discarded",
+                    "in a {C:attention}Boss Blind",
+                    "{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

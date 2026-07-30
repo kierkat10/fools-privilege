@@ -164,7 +164,7 @@ return {
                 name = "Stardust Joker",
                 text = {
                     "This Joker gains {C:white,X:mult}X#1#{} Mult",
-                    "per card discarded",
+                    "per [C:attention}card{} discarded",
                     "in a {C:attention}Boss Blind",
                     "{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)"
                 }

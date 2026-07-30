@@ -120,6 +120,15 @@ return {
                     "{C:red,E:2}self destructs"
                 }
             },
+            j_fpr_spin_wheel = {
+                name = "Spin the Wheel",
+                text = {
+                    "When {C:attention}Blind{} is",
+                    "selected, create",
+                    "a random {C:attention}Tag",
+                    "but lose {C:money}$#1#"
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

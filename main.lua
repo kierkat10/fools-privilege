@@ -34,7 +34,7 @@ local files = {
             "rainbow_end",
             "schrodinger",
             "mirror",
-            "spinthewheel",
+            "spin_wheel",
             "croupier",
             "draw4",
             "rightangle",

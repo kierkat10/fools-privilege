@@ -102,6 +102,14 @@ return {
                     "all scoring cards"
                 }
             },
+            j_fpr_schrodinger = {
+                name = "Schrödinger",
+                text = {
+                    "Played cards have a",
+                    "{C:red,E:2}fixed {C:green}#1# in #2#{} chance to",
+                    "give {C:white,X:mult}X#3#{} Mult when scored",
+                }
+            },
             j_fpr_approve = {
                 name = "Approve!",
                 text = {

@@ -1,100 +1,70 @@
 
-SMODS.Joker { --Smash Burguer
-    key = "smashburguer",
+SMODS.Joker {
+    key = "burger",
     config = {
         extra = {
-            smashburguer_var = 2,
-            sb_var = 8
+            xmult = 2,
+            dollars = 4,
+            xmult_mod = 0.25,
+            dollars_mod = 1
         }
     },
-    loc_txt = {
-        ['name'] = 'Smash Burguer',
-        ['text'] = {
-            [1] = '{C:attention}Played {}hands apply',
-            [2] = '{X:red,C:white}X#1#{} Mult and {C:money}-#2#${}.',
-            [3] = 'when the round ends,',
-            [4] = '{C:red}decrease {}money {C:red}loss {}',
-            [5] = 'by {C:money}$1{} and Mult by {X:mult,C:white}X0.5{}'
-        },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
-        }
-    },
-    pos = {
-        x = 1,
-        y = 2
-    },
-    display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
-    },
+    pos = { x = 1, y = 2 },
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = false,
-    perishable_compat = true,
-    unlocked = true,
-    discovered = true,
     atlas = 'joker',
-    pools = { ["fpr_fpv_jokers"] = true },
-    
     loc_vars = function(self, info_queue, card)
-        
-        return {vars = {card.ability.extra.smashburguer_var, card.ability.extra.sb_var}}
+        return {
+            vars = {
+                card.ability.extra.xmult, 
+                card.ability.extra.dollars,
+                card.ability.extra.xmult_mod,
+                card.ability.extra.dollars_mod
+            }
+        }
     end,
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
+        if context.joker_main then
             return {
-                Xmult = card.ability.extra.smashburguer_var,
-                extra = {
-                    
-                    func = function()
-                        
-                        local current_dollars = G.GAME.dollars
-                        local target_dollars = G.GAME.dollars + card.ability.extra.sb_var
-                        local dollar_value = target_dollars - current_dollars
-                        ease_dollars(dollar_value)
-                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.sb_var), colour = G.C.MONEY})
-                        return true
-                    end,
-                    colour = G.C.MONEY
-                }
+                xmult = card.ability.extra.xmult,
+                dollars = -card.ability.extra.dollars
             }
         end
-        if context.end_of_round and context.game_over == false and context.main_eval  and not context.blueprint then
-            if to_big((card.ability.extra.smashburguer_var or 0)) ~= to_big(0) then
+        if context.end_of_round and context.main_eval and not context.blueprint then
+            if
+                (
+                    (card.ability.extra.xmult - card.ability.extra.xmult_mod) <= 0 or
+                    (card.ability.extra.dollars - card.ability.extra.dollars_mod) <= 0
+                )
+            then
+                SMODS.destroy_cards(card, { pinch_anim = true })
                 return {
-                    func = function()
-                        card.ability.extra.smashburguer_var = math.max(0, (card.ability.extra.smashburguer_var) - 0.5)
-                        return true
-                    end,
-                    extra = {
-                        func = function()
-                            card.ability.extra.sb_var = math.max(0, (card.ability.extra.sb_var) - 2)
-                            return true
-                        end,
-                        colour = G.C.RED
+                    message = localize("k_eaten_ex")
+                }
+            else
+                SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "xmult",
+                    scalar_value = "xmult_mod",
+                    operation = "-",
+                    scaling_message = {
+                        message = "-X" .. card.ability.extra.xmult_mod .. " Mult" .. (card.ability.extra.xmult_mod > 1 and "s" or ""),
+                        colour = G.C.MULT
                     }
-                }
-            elseif to_big((card.ability.extra.smashburguer_var or 0)) == to_big(0) then
-                return {
-                    func = function()
-                        local target_joker = card
-                        
-                        if target_joker then
-                            target_joker.getting_sliced = true
-                            G.E_MANAGER:add_event(Event({
-                                func = function()
-                                    target_joker:start_dissolve({G.C.RED}, nil, 1.6)
-                                    return true
-                                end
-                            }))
-                            card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Destroyed!", colour = G.C.RED})
-                        end
-                        return true
-                    end
-                }
+                })
+                SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "dollars",
+                    scalar_value = "dollars_mod",
+                    operation = "-",
+                    scaling_message = {
+                        message = "-$" .. card.ability.extra.dollars_mod,
+                        colour = G.C.MONEY
+                    }
+                })
             end
         end
     end

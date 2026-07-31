@@ -164,9 +164,23 @@ return {
                 name = "Stardust Joker",
                 text = {
                     "This Joker gains {C:white,X:mult}X#1#{} Mult",
-                    "per [C:attention}card{} discarded",
+                    "per {C:attention}card{} discarded",
                     "in a {C:attention}Boss Blind",
                     "{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)"
+                }
+            },
+            j_fpr_burger = {
+                name = "Smash Burger",
+                text = {
+                    {
+                        "{X:red,C:white}X#1#{} Mult and lose {C:money}#2#$",
+                        "when hand played"
+                    },
+                    {
+                        "Decrease {C:white,X:mult}XMult{} by {X:mult,C:white}X#3#{} and",
+                        "money lost by {C:money}$#4#",
+                        "at end of round"
+                    }
                 }
             },
             j_fpr_approve = {

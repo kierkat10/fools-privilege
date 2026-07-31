@@ -177,8 +177,8 @@ return {
                         "when hand played"
                     },
                     {
-                        "Decrease {C:white,X:mult}XMult{} by {X:mult,C:white}X#3#{} and",
-                        "money lost by {C:money}$#4#",
+                        "Decrease {C:white,X:mult}XMult{} by {X:mult,C:white}X#3#{}",
+                        "and money lost by {C:money}$#4#",
                         "at end of round"
                     }
                 }
